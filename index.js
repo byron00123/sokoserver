@@ -73,4 +73,6 @@ app.post('/stripe-checkout', async(req,res)  => {
 });
 
 
-module.exports.handler = serverless(app);
+app.listen(3000, ()  => {
+    console.log("listening on port 3000;");
+});
